@@ -8,7 +8,6 @@
         array('Abdoul Aziz', 'Dione', 'homme', 'Senegal', 'PHP', 'abdoulazizdione1997@gmail.com', '30/09/1997', 'commentaire'),
         array('Abdoul Aziz', 'Dione', 'homme', 'Senegal', 'PHP', 'abdoulazizdione1997@gmail.com', '30/09/1997', 'commentaire')
     );
-    $taille = count($tableau);
 
 
     if(isset($_POST['validation'])){
@@ -29,7 +28,6 @@
             }
 
             foreach ($pays as $paysChoisi) {
-                $taille++;
                 array_push($tableau, array($prenom, $nom, $genre, $paysChoisi, $langage, $email, $birthday, $commentaire));
             }
                 
